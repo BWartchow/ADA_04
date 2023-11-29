@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 10%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #3c413c;
+    color: #F2F2F2;
+}
+
+h1, h2 {
+    color: #94D991
+}
+
+.intro {
+    font-size: 1.5rem;
+}
+
+.item-de-lista-ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.img-evento {
+    width: 300px;
+}
+
+.titulo-evento {
+    color: #F2A0A0;
+}
+
+.link-saiba-mais {
+    text-decoration: none;
+    color: #F2A0A0;
+    background-color: #8C0303;
+    padding: 0.5rem;
+}
+
+.link-saiba-mais:hover {
+    background-color: #F2F2F2;
+}
+
+.item-de-lista-ol {
+    list-style-type: upper-alpha;
+    margin-bottom: 2rem;
+}
+
+#link-whats {
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #067302;
+    padding: 0.5rem;
+}
+
+#link-whats:hover {
+    background-color: #F2A0A0;
+}
