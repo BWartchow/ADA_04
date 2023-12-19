@@ -1,0 +1,229 @@
+
+main {
+  /* Tag que envolve todo o conteúdo da homepage*/
+  min-height: calc(100vh - 15em);
+  max-width: 100vw;
+}
+
+/*Seção Título do site e slogan*/
+
+.container {
+  display: block;
+}
+
+h1 {
+  padding-top: 3.5em;
+  font-size: 2.25em;
+  font-weight: 400;
+  text-align: center;
+  color:  #043202;
+}
+
+.intro {
+  font-size: 1.5rem;
+  line-height: 2em;
+  text-align: center;
+  color: #236c67;
+}
+
+/*Fim da Seção Título do site e slogan*/
+
+/*Seções eventos e Enquete*/
+
+#secao-eventos, #secao-enquete {
+  margin-top: 2em;
+  margin-right: 3%;
+  max-width: 100vw;
+}
+
+#secao-eventos h2,
+#secao-enquete h2 {
+  font-size: 1.5rem;
+  padding: 12px 0 12px 0;
+  font-weight: 400;
+  color: #043202;
+  text-align: center;
+}
+
+/*Css específico seção eventos*/
+
+#secao-eventos ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0 40px 0;
+}
+
+#secao-eventos ul li {
+  width: 70vw;
+  min-height: 20em;
+  background-color: #236c67;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  padding-bottom: 1em;
+}
+
+#secao-eventos ul li h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  padding: 15px 15px 0 15px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+
+#secao-eventos ul li img {
+  padding: 4%;
+  width: calc(100% - 30px);
+  aspect-ratio: 16/9;
+}
+
+#secao-eventos ul li a {
+  display: flex;
+  width: 50%;
+  line-height: 36px;
+  height: 36px;
+  background-color: #8C0303;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: auto;
+  justify-content: baseline;
+  padding: 0.5em;
+}
+
+#secao-eventos ul li a:hover {
+  color: #f7c8ea;
+}
+
+/*Fim do Css específico seção eventos*/
+
+/*Css específico seção enquete*/
+
+#secao-enquete .enquete {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 80px;
+  margin-left: 3%;
+}
+
+#secao-enquete .resultados,
+#secao-enquete .votacao {
+  width: 50%;
+  min-height: 200px;
+  background-color: #236c67;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+#secao-enquete .resultados h3,
+#secao-enquete .votacao h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 15px 15px 0 15px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-left: 0.5em;
+}
+
+#secao-enquete .resultados ol {
+  padding: 10px 0 0 10px; 
+}
+
+#secao-enquete .resultados ol li {
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+#secao-enquete .votacao form {
+  padding-top: 10px;
+}
+
+#secao-enquete .votacao input {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  line-height: 150%;
+  max-width: 80%;
+}
+
+#secao-enquete .votacao input[type="text"] {
+  font-size: 0.75rem;
+  margin-left: 10px;
+  width: 250px;
+}
+
+#secao-enquete .btn-form {
+  width: 25%;
+  margin: 10px 0 10px 0;
+  height: 36px;
+  background-color: #8C0303;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#secao-enquete .btn-form:hover {
+  color: #f7c8ea;
+}
+
+/*Fim do Css específico seção enquete*/
+
+
+/* MEDIA QUERY PARA CELULAR */
+@media screen and (max-width: 480px) {
+
+  body, html {
+    max-width: 100vw !important;
+    font-size: 12px;
+  }
+
+  nav a {
+    display: block;
+    padding: 0;
+    margin-right: 2%;
+    font-size: 1.25rem;
+  }
+
+  #secao-eventos ul {
+    display: block;
+  }
+
+  #secao-eventos ul li {
+    margin-bottom: 5%;
+    min-width: 80vw;
+  }
+
+  .enquete {
+    display: block !important;
+  }
+  .resultados,  .votacao {
+    margin-left: 3%;
+    margin-bottom: 20px;
+    min-width: 80vw;
+  }
+
+  .intro {
+    padding-top: 0;
+  }
+
+  #eventos h2, #pesquisa h2 {
+    padding-left: 30px;
+  }
+
+  .votacao input[type="text"] {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  footer p {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+  }
+
+}

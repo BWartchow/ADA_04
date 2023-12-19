@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/contato.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <a href="index.html">
+             <img src="img/logo.svg" alt="Logomarca da casa de festas mamma mia" />
+           </a>
+        </div>
+        <nav>
+           <a href="index.html">Home</a>
+           <a href="formatura.html">Formaturas</a>
+           <a href="datas-comemorativas.html">Datas Comemorativas</a>
+           <a href="contato.html">Contato</a>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Contato</h2>
+                <form>
+                    <label for="fnome">Nome:</label><br />
+                    <input
+                        class="input"
+                        id="fnome"
+                        name="fnome"
+                        type="text"
+                        required
+                    /><br />
+                    <label for="femail">E-mail:</label><br />
+                    <input
+                        class="input"
+                        id="femail"
+                        name="femail"
+                        type="email"
+                        required
+                    /><br />
+                    <label for="fassunto">Assunto:</label><br />
+                    <input
+                        class="input"
+                        id="fassunto"
+                        name="fassunto"
+                        type="text"
+                        required
+                    /><br />
+                    <label for="fmensagem">Mensagem:</label><br />
+                    <textarea
+                        class="input"
+                        id="fmensagem"
+                        name="fmensagem"
+                        rows="8"
+                        required
+                    ></textarea
+                    ><br />
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+          <p>&copy; 2023 | Site desenvolvido por Bê Wartchow - baseado no site desenvolvido pelo professor Roosevelt Franklin durante as aulas de FrontEnd Estático - Start Coding ADA + SAP</p>
+        </div>
+      </footer>
+</body>
+</html>

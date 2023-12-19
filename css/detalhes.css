@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700');
+
+body {
+    background-color: #f7c8ea !important;
+    color: #043202;
+}
+
+main {
+  min-height: calc(100vh - 15em);
+}
+
+.container h1 {
+    padding-top: 5%;
+    font-size: 2.25em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#info-geral h2, #info-especifica h3,
+#natal-info-geral h2, #natal-info-especifica h3,
+#reveillon-info-geral h2, #reveillon-info-especifica h3 {
+    font-family: 'Playfair Display', serif;
+    color: #236c67;
+}
+
+#info-geral, #natal-info-geral, #reveillon-info-geral {
+    text-align: justify;
+}
+
+#info-geral h2, #natal-info-geral h2, #reveillon-info-geral h2 {
+    font-size: 2em;
+    padding-bottom: 0.75em;
+    font-weight: 400;
+    padding-top: 3%;
+}
+
+#info-especifica, #natal-info-especifica, #reveillon-info-especifica {
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 3%;
+}
+
+#link-whats {
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #236c67;
+    padding: 0.5rem;
+}
+
+#link-whats:hover {
+    color: #f7c8ea;
+}
+
+footer {
+    height: fit-content !important;
+    padding-bottom: 2em;
+}
+
+/* MEDIA QUERY PARA CELULAR */
+@media screen and (max-width: 480px) {
+  
+    body, html {
+      max-width: 100vw !important;
+      font-size: 12px;
+    }
+    
+    nav a {
+        display: block;
+        padding: 0;
+        margin-right: 2%;
+        font-size: 1.25rem;
+      }    
+
+    footer p {
+      padding-top: 0;
+      padding-bottom: 0.5rem;
+    }
+  
+  }
+  
